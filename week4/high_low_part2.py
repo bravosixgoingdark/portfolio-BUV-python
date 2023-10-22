@@ -53,14 +53,12 @@ while True:
     card_generation()
     first = random_number[0]
     second = random_number[1]
-    first_output = dictionizer(first)
-    second_output = dictionizer(second)
     #print(second_output) # for testing purposes
-    print(f"The first card is: {first_output}")
+    print(f"The first card is: {dictionizer(first)}")
     print("Is the next card higher or lower?. Please enter higher or lower")
     user_input = input("Enter higher or lower: ").lower().strip()
     if higher_or_lower(user_input, first, second) == True:
-        print(f"You are correct! The next card was: {second_output}")
+        print(f"You are correct! The next card was: {dictionizer(second)}")
         try_again = input("Do you want to play again? Enter yes or no: ").lower().strip()
         if try_again == "yes":
             reset()
@@ -68,7 +66,7 @@ while True:
             print("Thanks for playing!")
             break       
     else:
-        print(f"You are wrong! The correct answer was {second_output}")
+        print(f"You are wrong! The correct answer was {dictionizer(second)}")
         try_again = input("Do you want to play again? Enter yes or no: ").lower().strip()
         if try_again == "yes":
             reset()
