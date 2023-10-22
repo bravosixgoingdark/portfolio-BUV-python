@@ -1,6 +1,6 @@
 import random 
 import os
-
+import platform
 
 card_dictionary = { 
     1: "Ace",
@@ -40,7 +40,10 @@ def higher_or_lower(input, first, second):
 
 def reset():
     random_number.clear()
-    os.system("clear")
+    if platform.system() == "Windows":
+        os.system("cls")
+    else:
+        os.system("clear")
 
 
 
