@@ -2,6 +2,8 @@ import random
 import os
 import platform
 
+#TODO: add scoring system
+
 card_dictionary = { 
     1: "Ace",
     11: "Jack",
