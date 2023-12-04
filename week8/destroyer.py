@@ -16,7 +16,7 @@ def print_board(board):
     print(' *********')
     row_num=1
     for row in board:
-        print("%d|%s|" % (row_num, "|".join(row)))
+        print("%d|%s|" % (row_num, "|".join(row))) # join the elements of the row with a pipe
         row_num +=1
 
 def get_ship_location():
