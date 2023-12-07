@@ -8,4 +8,4 @@ def colors():
         print(rainbow_colors[color - 1])
 
 if __name__ == "__main__":
-    colors()
+    colors() 

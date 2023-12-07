@@ -1,6 +1,6 @@
-def integers(a, b):
+def integers(a, b): # function to swap two integers
     list = [a, b]
-    reversed = list[::-1]
+    reversed = list[::-1] # Return the reversed list
     return reversed
 
 def main():

@@ -1,4 +1,4 @@
-def diamond(width):
+def diamond(width): # width is an odd number
     for i in range(width * 2):
         if i <= width:
             spaces = width - i

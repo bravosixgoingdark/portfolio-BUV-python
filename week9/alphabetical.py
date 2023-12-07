@@ -1,4 +1,4 @@
-wordlist = []
+wordlist = [] # empty list to store the words
 def main():
     i = 1    
     while i <= 5:
